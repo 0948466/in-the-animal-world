@@ -1,0 +1,30 @@
+.themes-form-questions {
+  &__item {
+    padding: 42px 10px 44px 10px;
+    margin-bottom: 45px;
+    background-color: #fff;
+  }
+  &__title {
+    margin-bottom: 15px;
+    @include responsive-font-size(18);
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color1;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-bottom: 40px;
+    @include responsive-font-size(18);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color5;
+  }
+}

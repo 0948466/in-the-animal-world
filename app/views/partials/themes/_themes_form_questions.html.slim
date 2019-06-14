@@ -1,0 +1,17 @@
+.bc-color-1
+  = simple_form_for(@user, html: { class: "form-reg", autocomplete: 'off', novalidate: false }, remote: true) do |f|
+    .container
+      input type="hidden" name="theme" value=@theme.id
+      - @theme.questions.each_with_index do |question, index|
+        .themes-form-questions__item
+          h2.themes-form-questions__title Вопрос № #{index + 1}
+          p.themes-form-questions__text
+            = question.name
+          .radio-btn-wrap
+            label.radio
+              input name="answer[#{question.id}]" type="radio" value="true"
+              .radio-btn Истина
+            label.radio
+              input name="answer[#{question.id}]" type="radio" value="false"
+              .radio-btn Ложь
+    = render 'partials/themes/themes_form_send'

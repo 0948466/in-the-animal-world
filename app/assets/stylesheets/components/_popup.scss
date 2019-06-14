@@ -1,0 +1,28 @@
+.popup {
+  position: relative;
+  margin: 0 auto;
+  padding: 55px 80px 65px 80px;
+  width: 100%;
+  max-width: 770px;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url(image_path("background/pattern.png"));
+  @include w320-767 {
+    padding: 35px 30px;
+  }
+  &__icon-close,
+  &__icon-close:active {
+    top: 33px;
+    right: 33px;
+    width: 31px;
+    height: 31px;
+    background: asset-data-url("icons/icon-close.png") no-repeat center;
+    cursor: pointer;
+    @include w320-767 {
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

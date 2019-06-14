@@ -1,0 +1,112 @@
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 830px;
+  @include w320-767 {
+    flex-wrap: wrap;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 370px;
+    cursor: default;
+    &:hover {
+      box-shadow: none;
+      color: #fff;
+    }
+    @include w320-767 {
+      max-width: 320px;
+    }
+  }
+
+  &__text {
+    padding: 0 10px;
+    margin-right: 27px;
+    @include responsive-font-size(18);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .ya-share2__list {
+    display: flex;
+  }
+
+  .ya-share2__item {
+    margin-right: 6px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .ya-share2__link {
+    display: block;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: $colorIconSocial;
+    border-radius: 50%;
+    font-size: 0;
+    @include w320-767 {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent no-repeat center / 24%;
+      border-radius: 50%;
+    }
+  }
+
+  .ya-share2__item_service_vkontakte .ya-share2__link::after {
+    background-image: asset-data-url("icons/icon-vk2.png");
+    background-position: center;
+    background-size: 52%;
+  }
+
+  .ya-share2__item_service_facebook .ya-share2__link::after {
+    background-image: asset-data-url("icons/icon-fb.png");
+  }
+
+  .ya-share2__item_service_odnoklassniki .ya-share2__link::after {
+    background-image: asset-data-url("icons/icon-od.png");
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    max-width: 371px;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    @include responsive-font-size(18);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 3px solid #ff0000;
+  }
+}

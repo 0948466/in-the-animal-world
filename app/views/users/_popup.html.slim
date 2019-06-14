@@ -1,0 +1,19 @@
+.popup.popup-users.bc-color-3
+  .mfp-close.popup__icon-close
+  h1.title-h1.popup-users__title-top #{@rank.name} науки
+  p.title-h1.color4.popup-users__title-bottom
+    = @rank.question_theme.name
+  .ellipses.ellipses_4
+  p.text-big.popup-users__text Поздравляем!
+  p.text-big.popup-users__text
+    |Вы правильно ответили на #{t('quection_count', count: @answer_correct)}  из #{@count_question}.<br>
+      За неутолимый интерес к жизни животных<br>
+      вам присваивается звание<br>
+  p.text-big.popup-users__text-big #{@rank.name} науки #{@rank.question_theme.name}
+  - if @social
+    .popup-users__social
+      p.text-big.popup-users__text-big2
+        |Чтобы участвовать в розыгрыше призов,<br>
+         поделитесь полученным званием<br>
+         в социальной сети
+      = render 'partials/share'

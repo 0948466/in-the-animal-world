@@ -1,0 +1,7 @@
+.share
+  .share__wrap.btn
+    .share__text Поделиться
+    .ya-share2#ya-share2 data-services="vkontakte" data-title="#{@user.uid.html_safe}" data-image="#{request.base_url}#{ image_path('og.png')}" data-bare="true" data-url="#{request.base_url}"
+
+javascript:
+    var share = Ya.share2('ya-share2');

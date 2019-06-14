@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  margin: 0 40px 0 auto;
+  @include w320-767 {
+    display: none;
+  }
+}
+
+.social__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: $colorIconSocial no-repeat 50% 53%;
+  &:not(:last-of-type) {
+    margin-right: 10px;
+
+  }
+  @include w320-767 {
+    width: 30px;
+    height: 30px;
+  }
+  &_vk {
+    background-image: asset-data-url("icons/icon-vk.svg");
+    background-size: 50%;
+  }
+  &_fb {
+    background-image: asset-data-url("icons/icon-fb.png");
+  }
+  &_od {
+    background-image: asset-data-url("icons/icon-od.png");
+  }
+}

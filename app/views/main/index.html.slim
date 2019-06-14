@@ -1,0 +1,11 @@
+- set_meta_tags title: "В мире животных",
+        description: "СТАНЬ МАГИСТРОМ В МИРЕ ЖИВОТНЫХ",
+        keywords: "тест магистр животные"
+- set_meta_tags og: { type: 'website', title: "", description: "", url: request.original_url }
+- set_meta_tags og: { image: "#{request.base_url}#{ image_path ('og.png')}" }
+
+= render 'partials/index-top'
+= render 'partials/tests'
+= render 'partials/prizes'
+= render 'partials/instructions'
+= render 'partials/more-info'

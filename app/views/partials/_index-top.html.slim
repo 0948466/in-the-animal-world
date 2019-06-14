@@ -1,0 +1,19 @@
+section.index-top.bc-color-1
+  picture
+    source media="(min-width: 800px)" srcset= "#{request.base_url}#{ image_path ('background/animals1163.png')}"
+    source media="(min-width: 450px)" srcset= "#{request.base_url}#{ image_path ('background/animals849.png')}"
+    source media="(max-width: 449px)" srcset= "#{request.base_url}#{ image_path ('background/animals449.png')}"
+    = image_tag ('background/animals1163.png'), alt: "Котики", class: 'index-top__img-bottom'
+  .container
+    h1.title-h1.index-top__title
+      span> Стань
+      span.color3 магистром<br>
+      |в мире животных
+    .ellipses.ellipses_1
+    p.index-top__text.text-16
+      |А вы знаете, что открыть химический элемент йод помог кот?<br>
+       А у некоторых кузнечиков уши расположены на ногах?<br>
+       Сомневаетесь, правда это или ложь?<br>
+       Тогда присоединяйтесь к участию в нашем конкурсе.<br>
+       Проходите тест и получайте гарантированные призы.
+    .btn.js-btn-scroll Я готов

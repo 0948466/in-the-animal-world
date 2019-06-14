@@ -1,0 +1,9 @@
+header.bc-color-1
+  .container.main-header
+    .sponsor
+      = link_to 'http://animalfamily.tv/', target: '_blank', rel: 'noopener', class: 'logo' do
+        = image_tag_base64 asset_url('logo/logo-v-mire-animals.png'), "image/png", {alt: "В мире животных"}
+      = link_to 'https://www.tricolor.tv/', target: '_blank', rel: 'noopener', class: 'logo-tri' do
+        = image_tag_base64 asset_url('logo/logo-tricolor.png'), "image/png", {alt: "Телеканал Триколор"}
+    = render 'partials/social'
+    .age-limit 12+

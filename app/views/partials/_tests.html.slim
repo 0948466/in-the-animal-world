@@ -1,0 +1,16 @@
+section.tests.bc-color-3
+  .container
+    h2.title-h2.with-img
+      |Пройдите тест<br>
+      span> и получите
+      span.color4 высшее звание
+    .ellipses.ellipses_2
+    .columns.is-mobile.is-multiline#tests
+      - @themes.each do |item|
+        .column.is-full-mobile.tests__item
+          p.text-big ==item.description
+          = image_tag item.cover_image.url, class: "tests__img", alt: "#{item.description}"
+          = link_to "Пройти тест", theme_show_path(item.slug), class: "btn"
+
+
+

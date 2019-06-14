@@ -1,0 +1,9 @@
+.main-footer {
+  position: relative;
+  @include sectionPadding;
+  margin-top: auto;
+  &__text {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

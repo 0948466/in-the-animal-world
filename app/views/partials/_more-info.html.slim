@@ -1,0 +1,22 @@
+section.more-info.bc-color-3
+  .container
+    h2.title-h2.with-img
+      |Хотите&nbsp;
+      span.color4> узнать
+      |больше?
+    p.text-big.more-info__text
+      |Смотрите наши передачи<br>
+       на телеканале «В  мире животных»
+    .ellipses.ellipses_2
+    .columns.is-mobile.is-multiline
+      = link_to 'http://animalfamily.tv/info/news/udivitelnyy-mir-kotyat-premiera', target: '_blank', rel: 'noopener', class: 'column is-full-mobile more-info__item' do
+        p.text-big «Удивительный мир котят»
+        = image_tag ('more-info/more-info-1.jpg'), alt: "мир котят"
+
+      = link_to 'http://animalfamily.tv/info/news/udivitelnyy-mir-schenkov-premiera', target: '_blank', rel: 'noopener', class: 'column is-full-mobile more-info__item' do
+        p.text-big «Удивительный мир щенков»
+        = image_tag ('more-info/more-info-2.jpg'), alt: "мир щенков"
+
+      = link_to 'http://animalfamily.tv/info/news/makromiry-premiera', target: '_blank', rel: 'noopener', class: 'column is-full-mobile more-info__item' do
+        p.text-big «Макромиры»
+        = image_tag ('more-info/more-info-3.jpg'), alt: "Макромиры"

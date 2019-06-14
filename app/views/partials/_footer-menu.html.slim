@@ -1,0 +1,7 @@
+.footer-menu
+  .footer-menu__item
+    = link_to 'Правила и сроки <br>проведения акции'.html_safe,  root_path << 'Правила_Стань_Магистром_ВМЖ.pdf', class: "text-sm link-text", target: '_blank', rel: 'noopener'
+  .footer-menu__item
+    = render 'partials/social'
+  .footer-menu__item
+    = link_to 'Сайт телеканала <br>«В мире животных»'.html_safe, 'http://animalfamily.tv/', class:"text-sm footer-menu__link link-text", target: '_blank', rel: 'noopener'
